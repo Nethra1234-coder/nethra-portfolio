@@ -3,7 +3,7 @@
 Personal portfolio site — AI & Data Science undergrad building multi-agent AI systems,
 full-stack products, and researching confidence calibration in LLM reasoning.
 
-**🔗 Live site:** [add your GitHub Pages link here once it's live]
+**🔗 Live site:https://nethra1234-coder.github.io/nethra-portfolio/
 **📄 Résumé:** [resume.pdf](./resume.pdf)
 
 ---

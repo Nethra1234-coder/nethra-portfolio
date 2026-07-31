@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nethra Vijayabaskar — AI/DS Engineer</title>
+<meta name="description" content="Portfolio of Nethra Vijayabaskar — AI & Data Science undergraduate, building multi-agent AI systems and full-stack platforms." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">NV<span class="dot">·</span></a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="resume.pdf" target="_blank" class="nav-resume">Résumé ↗</a>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">AI &amp; Data Science · Shiv Nadar University Chennai · Class of 2029</p>
+    <h1 class="hero-title">
+      I build systems that know<br>
+      how much to <span class="trust-word">trust themselves</span><span class="caret">.</span>
+    </h1>
+    <p class="hero-sub">
+      Nethra Vijayabaskar — multi-agent AI, calibrated reasoning, and full-stack products.
+      Currently researching confidence calibration in LLM reasoning chains, and shipping
+      production-shaped apps in the meantime.
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">See the work</a>
+      <a href="resume.pdf" target="_blank" class="btn btn-ghost">Download résumé</a>
+    </div>
+  </div>
+
+  <div class="reliability-panel" aria-hidden="true">
+    <div class="rp-head">
+      <span class="rp-label">RELIABILITY DIAGRAM</span>
+      <span class="rp-sub">confidence vs. accuracy · reasoning steps</span>
+    </div>
+    <svg viewBox="0 0 320 260" class="rp-svg">
+      <line x1="40" y1="20" x2="40" y2="220" stroke="var(--line)" stroke-width="1"/>
+      <line x1="40" y1="220" x2="300" y2="220" stroke="var(--line)" stroke-width="1"/>
+      <line x1="40" y1="220" x2="300" y2="20" stroke="var(--line-dashed)" stroke-width="1" stroke-dasharray="3 4"/>
+      <polyline class="rp-curve" points="40,205 92,180 144,150 196,108 248,66 300,25" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+      <circle class="rp-dot" cx="40" cy="205" r="4"/>
+      <circle class="rp-dot" cx="92" cy="180" r="4"/>
+      <circle class="rp-dot" cx="144" cy="150" r="4"/>
+      <circle class="rp-dot" cx="196" cy="108" r="4"/>
+      <circle class="rp-dot" cx="248" cy="66" r="4"/>
+      <circle class="rp-dot" cx="300" cy="25" r="4"/>
+      <line class="rp-threshold" x1="205" y1="20" x2="205" y2="220" stroke="var(--amber)" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <text x="209" y="34" class="rp-theta">θ = 0.71</text>
+      <text x="40" y="238" class="rp-tick">0.0</text>
+      <text x="285" y="238" class="rp-tick">1.0</text>
+      <text x="12" y="224" class="rp-tick">0.0</text>
+      <text x="8" y="26" class="rp-tick">1.0</text>
+    </svg>
+    <div class="rp-foot">ECE ↓ across GSM8K + HotpotQA reasoning chains</div>
+  </div>
+</header>
+
+<main>
+
+<section id="about" class="section about">
+  <p class="section-eyebrow">01 — About</p>
+  <div class="about-grid">
+    <p class="about-lead">
+      I'm a second-year AI &amp; Data Science undergrad who'd rather ship the agent than
+      read another paper about it — though right now I'm doing both. My research asks
+      when a model's confidence can be trusted; my projects are mostly an excuse to build
+      the full stack underneath an idea, end to end.
+    </p>
+    <ul class="about-facts">
+      <li><span>CGPA</span>8.7 / 10</li>
+      <li><span>Focus</span>Multi-agent AI · Full-stack · Calibration</li>
+      <li><span>Based in</span>Chennai, India</li>
+      <li><span>Open to</span>SDE / AI Engineer internships</li>
+    </ul>
+  </div>
+</section>
+
+<section id="work" class="section">
+  <p class="section-eyebrow">02 — Selected work</p>
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project-list">
+
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-index">P1</span>
+        <span class="project-stack">Python · CrewAI · Streamlit</span>
+      </div>
+      <h3>AI Stock Analyst Agent</h3>
+      <p>A multi-agent system with dedicated Research, Analysis, and Decision agents that
+      hand work off to one another to run a full-cycle stock analysis — from raw research
+      to a stated investment recommendation. Deployed as a live public Streamlit app.</p>
+      <div class="project-tags"><span>Multi-agent orchestration</span><span>Sentiment analysis</span><span>Deployed</span></div>
+    </article>
+
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-index">P2</span>
+        <span class="project-stack">React · Node.js · SQLite</span>
+      </div>
+      <h3>ByteLink</h3>
+      <p class="project-sub">Collaborative AI-assisted team workspace</p>
+      <p>A full-stack platform combining real-time chat, a shared code editor, and task
+      management. Includes a behavioural analytics engine that estimates how much of a
+      contribution is human- vs. AI-written, plus AI-powered task summarisation and sprint
+      planning.</p>
+      <div class="project-tags"><span>Real-time</span><span>Behavioural analytics</span><span>Team tooling</span></div>
+    </article>
+
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-index">P3</span>
+        <span class="project-stack">HTML · CSS · JavaScript · Node.js</span>
+      </div>
+      <h3>TriTax</h3>
+      <p class="project-sub">AI-powered pre-tax filing assistant</p>
+      <p>Detects missing tax documents (Form 16, HRA proofs) and walks first-time filers
+      through what's left to do, step by step. Automated the document-gap detection logic
+      that used to be manual, cutting the back-and-forth filers usually need.</p>
+      <div class="project-tags"><span>Document parsing</span><span>Guided UX</span><span>First-time filers</span></div>
+    </article>
+
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-index">P4</span>
+        <span class="project-stack">DSA practice tool</span>
+      </div>
+      <h3>Algo Meter</h3>
+      <p class="project-sub">A confidence-calibrated DSA practice tracker</p>
+      <p>Built to make LeetCode/GFG grinding measurable rather than just a growing solved
+      count — tracking pattern coverage (two pointers, sliding window, and beyond) and
+      surfacing where practice is thin before an interview does.</p>
+      <div class="project-tags"><span>DSA patterns</span><span>Progress tracking</span></div>
+    </article>
+
+  </div>
+</section>
+
+<section id="research" class="section research">
+  <p class="section-eyebrow">03 — Research</p>
+  <h2 class="section-title">Adaptive Speculative Reasoning</h2>
+  <div class="research-body">
+    <p>
+      Research internship on step-level confidence scoring and calibration for reasoning
+      chains generated by a small language model, evaluated across GSM8K and HotpotQA.
+      My work: merging confidence scores with correctness labels, computing Expected
+      Calibration Error and reliability diagrams, and producing a recommended confidence
+      threshold (θ) for deciding when a reasoning step should be trusted outright versus
+      escalated for a second pass.
+    </p>
+    <p>
+      Earlier on the project I did manual QA and data curation — reviewing AI-generated
+      reasoning chains, categorising failure types, and curating gold examples that later
+      fed the calibration analysis.
+    </p>
+    <div class="research-tags">
+      <span>Confidence calibration</span>
+      <span>Reasoning chains</span>
+      <span>GSM8K / HotpotQA</span>
+      <span>ECE &amp; reliability diagrams</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <p class="section-eyebrow">04 — Toolkit</p>
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-col">
+      <h4>Languages</h4>
+      <p>Python, JavaScript, C, C++</p>
+    </div>
+    <div class="skill-col">
+      <h4>AI / ML</h4>
+      <p>Machine learning, multi-agent systems (CrewAI), sentiment analysis, LLM integration, AI automation</p>
+    </div>
+    <div class="skill-col">
+      <h4>Full-stack</h4>
+      <p>React, Node.js, HTML, CSS, SQLite</p>
+    </div>
+    <div class="skill-col">
+      <h4>Core CS</h4>
+      <p>OOP, data structures, data analysis</p>
+    </div>
+    <div class="skill-col">
+      <h4>Tools &amp; platforms</h4>
+      <p>Git / GitHub, Streamlit, AWS (Solutions Architecture), HackerRank, LeetCode</p>
+    </div>
+  </div>
+</section>
+
+<section id="achievements" class="section">
+  <p class="section-eyebrow">05 — Achievements</p>
+  <h2 class="section-title">Certifications &amp; competitions</h2>
+  <div class="ach-grid">
+    <ul class="ach-list">
+      <li>Microsoft AI Learning Challenge — Microsoft</li>
+      <li>AWS Solutions Architecture Job Simulation — Amazon Web Services</li>
+      <li>HackerRank Python 5-Star Badge</li>
+      <li>Python &amp; C/C++ Programming Certifications — HackerRank / CodeGalatta</li>
+      <li>95+ percentile in JEE Mains, qualified for JEE Advanced</li>
+      <li>Head Girl — Sri Chaitanya Techno School</li>
+      <li>90+ problems solved on LeetCode &amp; GeeksforGeeks</li>
+    </ul>
+    <ul class="ach-list">
+      <li>Smart India Hackathon (SIH) 2025 — national government problem-statement track</li>
+      <li>IIT Kharagpur × SNU Chennai Hackathon</li>
+      <li>24-Hour Vortex Hackathon — rapid prototyping</li>
+      <li class="ach-divider">Extracurricular</li>
+      <li>Member, Throwball Team — SNU Chennai</li>
+      <li>Classical Bharatanatyam dancer</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <p class="section-eyebrow">06 — Contact</p>
+  <h2 class="section-title">Let's talk</h2>
+  <p class="contact-sub">Looking for SDE, Full-Stack, and AI Engineer internships, Aug–Oct 2026.</p>
+  <div class="contact-links">
+    <a href="mailto:nethravijayabaskar@gmail.com">nethravijayabaskar@gmail.com ↗</a>
+    <a href="https://www.linkedin.com/in/nethravijayabaskar/" target="_blank">linkedin.com/in/nethravijayabaskar ↗</a>
+    <a href="https://github.com/Nethra1234-coder" target="_blank">github.com/Nethra1234-coder ↗</a>
+    <a href="tel:+917558126482">+91 75581 26482</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <span>Nethra Vijayabaskar © 2026</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
